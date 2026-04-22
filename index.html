@@ -13,6 +13,23 @@
 
 <div id="particles"></div>
 
+<!-- Audio element -->
+<audio id="bg-audio" loop preload="auto">
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Music Player fixo -->
+<div id="music-player">
+  <button id="music-toggle" onclick="toggleMusic()" title="Pausar/Tocar">▶</button>
+  <div class="music-info">
+    <span class="music-label">tocando agora</span>
+    <span class="music-title">nossa música 🎵</span>
+  </div>
+  <div class="music-bars" id="musicBars">
+    <span></span><span></span><span></span><span></span>
+  </div>
+</div>
+
 <div id="envelope-screen">
   <div class="envelope-wrap">
     <div class="envelope" id="envelope" onclick="openEnvelope()">
